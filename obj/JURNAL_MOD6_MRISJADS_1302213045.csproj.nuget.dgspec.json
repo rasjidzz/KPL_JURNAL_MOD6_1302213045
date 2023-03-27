@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\JURNAL_MOD6_1302213045\\JURNAL_MOD6_MRISJADS_1302213045\\JURNAL_MOD6_MRISJADS_1302213045.csproj": {}
+    "E:\\KPL_JURNAL_MOD6_1302213045\\JURNAL_MOD6_MRISJADS_1302213045.csproj": {}
   },
   "projects": {
-    "E:\\JURNAL_MOD6_1302213045\\JURNAL_MOD6_MRISJADS_1302213045\\JURNAL_MOD6_MRISJADS_1302213045.csproj": {
+    "E:\\KPL_JURNAL_MOD6_1302213045\\JURNAL_MOD6_MRISJADS_1302213045.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\JURNAL_MOD6_1302213045\\JURNAL_MOD6_MRISJADS_1302213045\\JURNAL_MOD6_MRISJADS_1302213045.csproj",
+        "projectUniqueName": "E:\\KPL_JURNAL_MOD6_1302213045\\JURNAL_MOD6_MRISJADS_1302213045.csproj",
         "projectName": "JURNAL_MOD6_MRISJADS_1302213045",
-        "projectPath": "E:\\JURNAL_MOD6_1302213045\\JURNAL_MOD6_MRISJADS_1302213045\\JURNAL_MOD6_MRISJADS_1302213045.csproj",
+        "projectPath": "E:\\KPL_JURNAL_MOD6_1302213045\\JURNAL_MOD6_MRISJADS_1302213045.csproj",
         "packagesPath": "C:\\Users\\PRAKTIKAN\\.nuget\\packages\\",
-        "outputPath": "E:\\JURNAL_MOD6_1302213045\\JURNAL_MOD6_MRISJADS_1302213045\\obj\\",
+        "outputPath": "E:\\KPL_JURNAL_MOD6_1302213045\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PRAKTIKAN\\AppData\\Roaming\\NuGet\\NuGet.Config",

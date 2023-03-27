@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +16,8 @@ namespace JURNAL_MOD6_MRISJADS_1302213045
 
         public SayaTubeUser(String nama)
         {
+            Contract.Requires(nama.Length <= 100);
+            Contract.Requires(nama != null);
             this.username = nama;
             this.Uploadedvideos = new List<SayaTubeVideo>();
             Random rand = new Random();
@@ -22,6 +26,8 @@ namespace JURNAL_MOD6_MRISJADS_1302213045
         }
         public void addvideo(SayaTubeVideo videobaru)
         {
+            Debug.Assert(videobaru != null);
+            Debug.Assert(videobaru.getplaycount() < 10000000000);
             Uploadedvideos.Add(videobaru);
         }
         public int getTotalVideoCount()

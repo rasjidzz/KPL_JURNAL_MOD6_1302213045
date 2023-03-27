@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +15,8 @@ namespace JURNAL_MOD6_MRISJADS_1302213045
         private int playcount;
         public SayaTubeVideo(string judul)
         {
+            Contract.Requires(judul.Length < 100);
+            Contract.Requires(judul != null);
             this.title = judul;
             Random rand = new Random();
             int idrand = rand.Next(00000, 99999);
@@ -21,7 +25,20 @@ namespace JURNAL_MOD6_MRISJADS_1302213045
         }
         public void Increaseplaycount(int count)
         {
+            Debug.Assert(count <= 25000000);
+            Debug.Assert(count >= 0);
             this.playcount += count;
+            try
+            {
+                checked
+                {
+                    this.playcount += count;
+                }
+            }
+            catch(OverflowException)
+            {
+                Console.WriteLine("Count Play Maximum");
+            }
         }
         public void PrintVideoDetails()
         {

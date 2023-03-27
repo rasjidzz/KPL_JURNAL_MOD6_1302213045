@@ -41,6 +41,7 @@
             user1.PrintAllVideoPlaycount();
             Console.WriteLine("\nINFORMASI FILM ke 1 ");
             video1.PrintVideoDetails();
+
         }
     }
 }
